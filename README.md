@@ -38,20 +38,14 @@ to your network prototxt.
 
 5. Please carefully tune learning rate, we found it had a great influence to the training results in our tasks.
 
-6. If you use this codes, please kindly cite our paper:
+If you use this codes, please kindly cite our paper:
 
 @InProceedings{Shi_2018_CVPR,
-
 author = {Shi, Zenglin and Zhang, Le and Liu, Yun and Cao, Xiaofeng and Ye, Yangdong and Cheng, Ming-Ming and Zheng, Guoyan},
-
 title = {Crowd Counting With Deep Negative Correlation Learning},
-
 booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-
 month = {June},
-
 year = {2018}
-
 }
 
 Please feel free to contact us if you still have any questions.
