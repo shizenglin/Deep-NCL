@@ -1,0 +1,32 @@
+
+net: "examples/crowd/code/shanghaiA/network_vgg_bilinear.prototxt"
+
+test_iter: 182
+
+test_interval: 5400
+
+#iter_size: 10
+
+base_lr:1e-9
+
+momentum: 0.9
+
+weight_decay: 0.0005
+
+lr_policy: "step"
+
+gamma: 0.1
+
+stepsize: 2160000
+
+display: 5400
+
+max_iter: 2160000
+
+snapshot: 5400
+
+snapshot_prefix: "examples/crowd/code/shanghaiA/model/network_inception"
+solver_mode: GPU
+
+device_id: 0
+

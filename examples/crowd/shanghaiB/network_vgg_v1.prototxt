@@ -1,0 +1,1777 @@
+name: "crowd_counting"
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  include {
+    phase: TRAIN
+  }
+  data_param {
+    source: "/home/peiyong/Work/Zenglin/szl/ShanghaiTech/partB/train8_5/image_lmdb"
+    batch_size: 12
+    backend: LMDB
+  }
+}
+layer {
+  name: "label"
+  type: "Data"
+  top: "label"
+  include {
+    phase: TRAIN
+  }
+  data_param {
+    source: "/home/peiyong/Work/Zenglin/szl/ShanghaiTech/partB/train8_5/dmap_lmdb"
+    batch_size: 12
+    backend: LMDB
+  }
+}
+
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  include {
+    phase: TEST
+  }
+  data_param {
+    source: "/home/peiyong/Work/Zenglin/szl/ShanghaiTech/partB/test8_5/image_lmdb"
+    batch_size: 1
+    backend: LMDB
+  }
+}
+layer {
+  name: "label"
+  type: "Data"
+  top: "label"
+  include {
+    phase: TEST
+  }
+  data_param {
+    source: "/home/peiyong/Work/Zenglin/szl/ShanghaiTech/partB/test8_5/dmap_lmdb"
+    batch_size: 1
+    backend: LMDB
+  }
+}
+
+layer {
+  bottom: "data"
+  top: "conv1_1"
+  name: "conv1_1"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 64
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv1_1"
+  top: "conv1_1"
+  name: "relu1_1"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv1_1"
+  top: "conv1_2"
+  name: "conv1_2"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 64
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv1_2"
+  top: "conv1_2"
+  name: "relu1_2"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv1_2"
+  top: "pool1"
+  name: "pool1"
+  type: "Pooling"
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layer {
+  bottom: "pool1"
+  top: "conv2_1"
+  name: "conv2_1"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 128
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv2_1"
+  top: "conv2_1"
+  name: "relu2_1"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv2_1"
+  top: "conv2_2"
+  name: "conv2_2"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 128
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv2_2"
+  top: "conv2_2"
+  name: "relu2_2"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv2_2"
+  top: "pool2"
+  name: "pool2"
+  type: "Pooling"
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layer {
+  bottom: "pool2"
+  top: "conv3_1"
+  name: "conv3_1"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 256
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv3_1"
+  top: "conv3_1"
+  name: "relu3_1"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv3_1"
+  top: "conv3_2"
+  name: "conv3_2"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 256
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv3_2"
+  top: "conv3_2"
+  name: "relu3_2"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv3_2"
+  top: "conv3_3"
+  name: "conv3_3"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 256
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv3_3"
+  top: "conv3_3"
+  name: "relu3_3"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv3_3"
+  top: "pool3"
+  name: "pool3"
+  type: "Pooling"
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layer {
+  bottom: "pool3"
+  top: "conv4_1"
+  name: "conv4_1"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 512
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv4_1"
+  top: "conv4_1"
+  name: "relu4_1"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv4_1"
+  top: "conv4_2"
+  name: "conv4_2"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 512
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv4_2"
+  top: "conv4_2"
+  name: "relu4_2"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv4_2"
+  top: "conv4_3"
+  name: "conv4_3"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 512
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv4_3"
+  top: "conv4_3"
+  name: "relu4_3"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv4_3"
+  top: "pool4"
+  name: "pool4"
+  type: "Pooling"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 1
+    pad:1
+  }
+}
+layer {
+  bottom: "pool4"
+  top: "conv5_1"
+  name: "conv5_1"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 512
+    pad: 2
+    kernel_size: 3
+    dilation: 2
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv5_1"
+  top: "conv5_1"
+  name: "relu5_1"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv5_1"
+  top: "conv5_2"
+  name: "conv5_2"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 512
+    pad: 2
+    kernel_size: 3
+    dilation: 2
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  bottom: "conv5_2"
+  top: "conv5_2"
+  name: "relu5_2"
+  type: "ReLU"
+}
+layer {
+  bottom: "conv5_2"
+  top: "conv5_3"
+  name: "conv5_3"
+  type: "Convolution"
+  param {
+    lr_mult: 0.1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0.2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 512
+    pad: 2
+    kernel_size: 3
+    dilation: 2
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+
+layer {
+  bottom: "conv5_3"
+  top: "conv5_3"
+  name: "relu5_3"
+  type: "ReLU"
+}
+
+layer {
+  name: "conv_score"
+  type: "Convolution"
+  bottom: "conv5_3"
+  top: "conv_score"
+  param {
+    lr_mult: 10
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 20
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 64
+    pad: 0
+    kernel_size: 1
+    stride: 1
+    group:64
+    weight_filler {
+      type: "constant"
+      value: 0.0001      
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+
+layer {
+  name: "relu_score"
+  type: "ReLU"
+  bottom: "conv_score"
+  top: "conv_score"
+}
+
+layer {
+  name: "slicer_conv"
+  type: "Slice"
+  bottom: "conv_score"
+  top: "score1"
+  top: "score2"
+  top: "score3"
+  top: "score4"
+  top: "score5"
+  top: "score6"
+  top: "score7"
+  top: "score8"
+  top: "score9"
+  top: "score10"
+  top: "score11"
+  top: "score12"
+  top: "score13"
+  top: "score14"
+  top: "score15"
+  top: "score16"
+  top: "score17"
+  top: "score18"
+  top: "score19"
+  top: "score20"
+  top: "score21"
+  top: "score22"
+  top: "score23"
+  top: "score24"
+  top: "score25"
+  top: "score26"
+  top: "score27"
+  top: "score28"
+  top: "score29"
+  top: "score30"
+  top: "score31"
+  top: "score32"
+  top: "score33"
+  top: "score34"
+  top: "score35"
+  top: "score36"
+  top: "score37"
+  top: "score38"
+  top: "score39"
+  top: "score40"
+  top: "score41"
+  top: "score42"
+  top: "score43"
+  top: "score44"
+  top: "score45"
+  top: "score46"
+  top: "score47"
+  top: "score48"
+  top: "score49"
+  top: "score50"
+  top: "score51"
+  top: "score52"
+  top: "score53"
+  top: "score54"
+  top: "score55"
+  top: "score56"
+  top: "score57"
+  top: "score58"
+  top: "score59"
+  top: "score60"
+  top: "score61"
+  top: "score62"
+  top: "score63"
+  top: "score64"
+  slice_param {
+    axis: 1
+    #slice_point: 1
+  }
+}
+
+layer {
+  name: "sumscore"
+  type: "Eltwise"
+  bottom: "score1"
+  bottom: "score2"
+  bottom: "score3"
+  bottom: "score4"
+  bottom: "score5"
+  bottom: "score6"
+  bottom: "score7"
+  bottom: "score8"
+  bottom: "score9"
+  bottom: "score10"
+  bottom: "score11"
+  bottom: "score12"
+  bottom: "score13"
+  bottom: "score14"
+  bottom: "score15"
+  bottom: "score16"
+  bottom: "score17"
+  bottom: "score18"
+  bottom: "score19"
+  bottom: "score20"
+  bottom: "score21"
+  bottom: "score22"
+  bottom: "score23"
+  bottom: "score24"
+  bottom: "score25"
+  bottom: "score26"
+  bottom: "score27"
+  bottom: "score28"
+  bottom: "score29"
+  bottom: "score30"
+  bottom: "score31"
+  bottom: "score32"
+  bottom: "score33"
+  bottom: "score34"
+  bottom: "score35"
+  bottom: "score36"
+  bottom: "score37"
+  bottom: "score38"
+  bottom: "score39"
+  bottom: "score40"
+  bottom: "score41"
+  bottom: "score42"
+  bottom: "score43"
+  bottom: "score44"
+  bottom: "score45"
+  bottom: "score46"
+  bottom: "score47"
+  bottom: "score48"
+  bottom: "score49"
+  bottom: "score50"
+  bottom: "score51"
+  bottom: "score52"
+  bottom: "score53"
+  bottom: "score54"
+  bottom: "score55"
+  bottom: "score56"
+  bottom: "score57"
+  bottom: "score58"
+  bottom: "score59"
+  bottom: "score60"
+  bottom: "score61"
+  bottom: "score62"
+  bottom: "score63"
+  bottom: "score64"
+  top: "sumscore"
+  eltwise_param {
+    operation: SUM
+  }
+}
+layer {
+    name: "avgscore"
+    bottom: "sumscore"
+    top: "avgscore"
+    type: "Power"
+    power_param {
+      power: 1
+      scale: 0.015625
+      shift: 0
+    }
+   include {
+    phase: TEST
+  }
+}
+
+layer {
+   name: "mae"
+   type: "MAELoss"
+   bottom: "avgscore"
+   bottom: "label"
+   top: "mae"
+   include {
+    phase: TEST
+  }
+}
+
+layer {
+   name: "mse"
+   type: "MSELoss"
+   bottom: "avgscore"
+   bottom: "label"
+   top: "mse"
+   include {
+    phase: TEST
+  }
+}
+
+layer {
+   name: "loss1"
+   type: "NCLLoss"
+   bottom: "score1"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss1"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss2"
+   type: "NCLLoss"
+   bottom: "score2"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss2"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss3"
+   type: "NCLLoss"
+   bottom: "score3"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss3"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss4"
+   type: "NCLLoss"
+   bottom: "score4"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss4"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss5"
+   type: "NCLLoss"
+   bottom: "score5"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss5"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss6"
+   type: "NCLLoss"
+   bottom: "score6"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss6"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss7"
+   type: "NCLLoss"
+   bottom: "score7"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss7"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss8"
+   type: "NCLLoss"
+   bottom: "score8"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss8"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss9"
+   type: "NCLLoss"
+   bottom: "score9"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss9"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss10"
+   type: "NCLLoss"
+   bottom: "score10"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss10"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss11"
+   type: "NCLLoss"
+   bottom: "score11"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss11"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss12"
+   type: "NCLLoss"
+   bottom: "score12"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss12"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss13"
+   type: "NCLLoss"
+   bottom: "score13"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss13"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss14"
+   type: "NCLLoss"
+   bottom: "score14"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss14"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss15"
+   type: "NCLLoss"
+   bottom: "score15"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss15"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss16"
+   type: "NCLLoss"
+   bottom: "score16"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss16"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss17"
+   type: "NCLLoss"
+   bottom: "score17"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss17"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss18"
+   type: "NCLLoss"
+   bottom: "score18"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss18"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss19"
+   type: "NCLLoss"
+   bottom: "score19"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss19"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss20"
+   type: "NCLLoss"
+   bottom: "score20"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss20"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss21"
+   type: "NCLLoss"
+   bottom: "score21"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss21"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss22"
+   type: "NCLLoss"
+   bottom: "score22"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss22"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss23"
+   type: "NCLLoss"
+   bottom: "score23"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss23"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss24"
+   type: "NCLLoss"
+   bottom: "score24"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss24"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss25"
+   type: "NCLLoss"
+   bottom: "score25"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss25"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss26"
+   type: "NCLLoss"
+   bottom: "score26"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss26"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss27"
+   type: "NCLLoss"
+   bottom: "score27"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss27"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss28"
+   type: "NCLLoss"
+   bottom: "score28"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss28"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss29"
+   type: "NCLLoss"
+   bottom: "score29"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss29"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss30"
+   type: "NCLLoss"
+   bottom: "score30"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss30"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss31"
+   type: "NCLLoss"
+   bottom: "score31"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss31"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss32"
+   type: "NCLLoss"
+   bottom: "score32"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss32"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss33"
+   type: "NCLLoss"
+   bottom: "score33"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss33"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss34"
+   type: "NCLLoss"
+   bottom: "score34"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss34"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss35"
+   type: "NCLLoss"
+   bottom: "score35"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss35"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss36"
+   type: "NCLLoss"
+   bottom: "score36"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss36"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss37"
+   type: "NCLLoss"
+   bottom: "score37"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss37"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss38"
+   type: "NCLLoss"
+   bottom: "score38"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss38"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss39"
+   type: "NCLLoss"
+   bottom: "score39"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss39"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss40"
+   type: "NCLLoss"
+   bottom: "score40"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss40"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss41"
+   type: "NCLLoss"
+   bottom: "score41"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss41"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss42"
+   type: "NCLLoss"
+   bottom: "score42"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss42"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss43"
+   type: "NCLLoss"
+   bottom: "score43"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss43"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss44"
+   type: "NCLLoss"
+   bottom: "score44"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss44"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss45"
+   type: "NCLLoss"
+   bottom: "score45"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss45"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss46"
+   type: "NCLLoss"
+   bottom: "score46"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss46"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss47"
+   type: "NCLLoss"
+   bottom: "score47"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss47"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss48"
+   type: "NCLLoss"
+   bottom: "score48"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss48"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss49"
+   type: "NCLLoss"
+   bottom: "score49"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss49"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss50"
+   type: "NCLLoss"
+   bottom: "score50"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss50"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss51"
+   type: "NCLLoss"
+   bottom: "score51"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss51"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss52"
+   type: "NCLLoss"
+   bottom: "score52"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss52"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss53"
+   type: "NCLLoss"
+   bottom: "score53"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss53"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss54"
+   type: "NCLLoss"
+   bottom: "score54"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss54"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss55"
+   type: "NCLLoss"
+   bottom: "score55"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss55"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss56"
+   type: "NCLLoss"
+   bottom: "score56"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss56"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss57"
+   type: "NCLLoss"
+   bottom: "score57"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss57"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss58"
+   type: "NCLLoss"
+   bottom: "score58"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss58"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss59"
+   type: "NCLLoss"
+   bottom: "score59"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss59"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss60"
+   type: "NCLLoss"
+   bottom: "score60"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss60"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss61"
+   type: "NCLLoss"
+   bottom: "score61"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss61"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss62"
+   type: "NCLLoss"
+   bottom: "score62"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss62"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss63"
+   type: "NCLLoss"
+   bottom: "score63"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss63"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}
+
+layer {
+   name: "loss64"
+   type: "NCLLoss"
+   bottom: "score64"
+   bottom: "label"
+   bottom: "sumscore"
+   top: "loss64"
+   ncl_loss_param {
+    lambda: 1.01
+    net_num: 64
+  }
+  include {
+    phase: TRAIN
+  }
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+TOOLS=./build/tools
+protopath=./examples/crowd/code/shanghai
+
+$TOOLS/caffe train \
+    --solver=$protopath/solver_n1_1.prototxt
+    #--snapshot=$protopath/model/network3/network_iter_1436400.solverstate
+    #--weights=$protopath/model/model2/fold1/network_iter_252000.caffemodel
+
+#$TOOLS/caffe train \
+    #--solver=$protopath/solver_n1_2.prototxt \
+    #--snapshot=$protopath/model/network_iter_2160000.solverstate
+    #--weights=$protopath/model/network_iter_72279.caffemodel
+
+

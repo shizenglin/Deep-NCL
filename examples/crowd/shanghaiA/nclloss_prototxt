@@ -1,0 +1,9271 @@
+layer {
+ name:"slicer_conv"
+ type:"Slice"
+ bottom:"conv_score"
+ top: "score1"
+ top: "score2"
+ top: "score3"
+ top: "score4"
+ top: "score5"
+ top: "score6"
+ top: "score7"
+ top: "score8"
+ top: "score9"
+ top: "score10"
+ top: "score11"
+ top: "score12"
+ top: "score13"
+ top: "score14"
+ top: "score15"
+ top: "score16"
+ top: "score17"
+ top: "score18"
+ top: "score19"
+ top: "score20"
+ top: "score21"
+ top: "score22"
+ top: "score23"
+ top: "score24"
+ top: "score25"
+ top: "score26"
+ top: "score27"
+ top: "score28"
+ top: "score29"
+ top: "score30"
+ top: "score31"
+ top: "score32"
+ top: "score33"
+ top: "score34"
+ top: "score35"
+ top: "score36"
+ top: "score37"
+ top: "score38"
+ top: "score39"
+ top: "score40"
+ top: "score41"
+ top: "score42"
+ top: "score43"
+ top: "score44"
+ top: "score45"
+ top: "score46"
+ top: "score47"
+ top: "score48"
+ top: "score49"
+ top: "score50"
+ top: "score51"
+ top: "score52"
+ top: "score53"
+ top: "score54"
+ top: "score55"
+ top: "score56"
+ top: "score57"
+ top: "score58"
+ top: "score59"
+ top: "score60"
+ top: "score61"
+ top: "score62"
+ top: "score63"
+ top: "score64"
+ top: "score65"
+ top: "score66"
+ top: "score67"
+ top: "score68"
+ top: "score69"
+ top: "score70"
+ top: "score71"
+ top: "score72"
+ top: "score73"
+ top: "score74"
+ top: "score75"
+ top: "score76"
+ top: "score77"
+ top: "score78"
+ top: "score79"
+ top: "score80"
+ top: "score81"
+ top: "score82"
+ top: "score83"
+ top: "score84"
+ top: "score85"
+ top: "score86"
+ top: "score87"
+ top: "score88"
+ top: "score89"
+ top: "score90"
+ top: "score91"
+ top: "score92"
+ top: "score93"
+ top: "score94"
+ top: "score95"
+ top: "score96"
+ top: "score97"
+ top: "score98"
+ top: "score99"
+ top: "score100"
+ top: "score101"
+ top: "score102"
+ top: "score103"
+ top: "score104"
+ top: "score105"
+ top: "score106"
+ top: "score107"
+ top: "score108"
+ top: "score109"
+ top: "score110"
+ top: "score111"
+ top: "score112"
+ top: "score113"
+ top: "score114"
+ top: "score115"
+ top: "score116"
+ top: "score117"
+ top: "score118"
+ top: "score119"
+ top: "score120"
+ top: "score121"
+ top: "score122"
+ top: "score123"
+ top: "score124"
+ top: "score125"
+ top: "score126"
+ top: "score127"
+ top: "score128"
+ top: "score129"
+ top: "score130"
+ top: "score131"
+ top: "score132"
+ top: "score133"
+ top: "score134"
+ top: "score135"
+ top: "score136"
+ top: "score137"
+ top: "score138"
+ top: "score139"
+ top: "score140"
+ top: "score141"
+ top: "score142"
+ top: "score143"
+ top: "score144"
+ top: "score145"
+ top: "score146"
+ top: "score147"
+ top: "score148"
+ top: "score149"
+ top: "score150"
+ top: "score151"
+ top: "score152"
+ top: "score153"
+ top: "score154"
+ top: "score155"
+ top: "score156"
+ top: "score157"
+ top: "score158"
+ top: "score159"
+ top: "score160"
+ top: "score161"
+ top: "score162"
+ top: "score163"
+ top: "score164"
+ top: "score165"
+ top: "score166"
+ top: "score167"
+ top: "score168"
+ top: "score169"
+ top: "score170"
+ top: "score171"
+ top: "score172"
+ top: "score173"
+ top: "score174"
+ top: "score175"
+ top: "score176"
+ top: "score177"
+ top: "score178"
+ top: "score179"
+ top: "score180"
+ top: "score181"
+ top: "score182"
+ top: "score183"
+ top: "score184"
+ top: "score185"
+ top: "score186"
+ top: "score187"
+ top: "score188"
+ top: "score189"
+ top: "score190"
+ top: "score191"
+ top: "score192"
+ top: "score193"
+ top: "score194"
+ top: "score195"
+ top: "score196"
+ top: "score197"
+ top: "score198"
+ top: "score199"
+ top: "score200"
+ top: "score201"
+ top: "score202"
+ top: "score203"
+ top: "score204"
+ top: "score205"
+ top: "score206"
+ top: "score207"
+ top: "score208"
+ top: "score209"
+ top: "score210"
+ top: "score211"
+ top: "score212"
+ top: "score213"
+ top: "score214"
+ top: "score215"
+ top: "score216"
+ top: "score217"
+ top: "score218"
+ top: "score219"
+ top: "score220"
+ top: "score221"
+ top: "score222"
+ top: "score223"
+ top: "score224"
+ top: "score225"
+ top: "score226"
+ top: "score227"
+ top: "score228"
+ top: "score229"
+ top: "score230"
+ top: "score231"
+ top: "score232"
+ top: "score233"
+ top: "score234"
+ top: "score235"
+ top: "score236"
+ top: "score237"
+ top: "score238"
+ top: "score239"
+ top: "score240"
+ top: "score241"
+ top: "score242"
+ top: "score243"
+ top: "score244"
+ top: "score245"
+ top: "score246"
+ top: "score247"
+ top: "score248"
+ top: "score249"
+ top: "score250"
+ top: "score251"
+ top: "score252"
+ top: "score253"
+ top: "score254"
+ top: "score255"
+ top: "score256"
+ top: "score257"
+ top: "score258"
+ top: "score259"
+ top: "score260"
+ top: "score261"
+ top: "score262"
+ top: "score263"
+ top: "score264"
+ top: "score265"
+ top: "score266"
+ top: "score267"
+ top: "score268"
+ top: "score269"
+ top: "score270"
+ top: "score271"
+ top: "score272"
+ top: "score273"
+ top: "score274"
+ top: "score275"
+ top: "score276"
+ top: "score277"
+ top: "score278"
+ top: "score279"
+ top: "score280"
+ top: "score281"
+ top: "score282"
+ top: "score283"
+ top: "score284"
+ top: "score285"
+ top: "score286"
+ top: "score287"
+ top: "score288"
+ top: "score289"
+ top: "score290"
+ top: "score291"
+ top: "score292"
+ top: "score293"
+ top: "score294"
+ top: "score295"
+ top: "score296"
+ top: "score297"
+ top: "score298"
+ top: "score299"
+ top: "score300"
+ top: "score301"
+ top: "score302"
+ top: "score303"
+ top: "score304"
+ top: "score305"
+ top: "score306"
+ top: "score307"
+ top: "score308"
+ top: "score309"
+ top: "score310"
+ top: "score311"
+ top: "score312"
+ top: "score313"
+ top: "score314"
+ top: "score315"
+ top: "score316"
+ top: "score317"
+ top: "score318"
+ top: "score319"
+ top: "score320"
+ top: "score321"
+ top: "score322"
+ top: "score323"
+ top: "score324"
+ top: "score325"
+ top: "score326"
+ top: "score327"
+ top: "score328"
+ top: "score329"
+ top: "score330"
+ top: "score331"
+ top: "score332"
+ top: "score333"
+ top: "score334"
+ top: "score335"
+ top: "score336"
+ top: "score337"
+ top: "score338"
+ top: "score339"
+ top: "score340"
+ top: "score341"
+ top: "score342"
+ top: "score343"
+ top: "score344"
+ top: "score345"
+ top: "score346"
+ top: "score347"
+ top: "score348"
+ top: "score349"
+ top: "score350"
+ top: "score351"
+ top: "score352"
+ top: "score353"
+ top: "score354"
+ top: "score355"
+ top: "score356"
+ top: "score357"
+ top: "score358"
+ top: "score359"
+ top: "score360"
+ top: "score361"
+ top: "score362"
+ top: "score363"
+ top: "score364"
+ top: "score365"
+ top: "score366"
+ top: "score367"
+ top: "score368"
+ top: "score369"
+ top: "score370"
+ top: "score371"
+ top: "score372"
+ top: "score373"
+ top: "score374"
+ top: "score375"
+ top: "score376"
+ top: "score377"
+ top: "score378"
+ top: "score379"
+ top: "score380"
+ top: "score381"
+ top: "score382"
+ top: "score383"
+ top: "score384"
+ top: "score385"
+ top: "score386"
+ top: "score387"
+ top: "score388"
+ top: "score389"
+ top: "score390"
+ top: "score391"
+ top: "score392"
+ top: "score393"
+ top: "score394"
+ top: "score395"
+ top: "score396"
+ top: "score397"
+ top: "score398"
+ top: "score399"
+ top: "score400"
+ top: "score401"
+ top: "score402"
+ top: "score403"
+ top: "score404"
+ top: "score405"
+ top: "score406"
+ top: "score407"
+ top: "score408"
+ top: "score409"
+ top: "score410"
+ top: "score411"
+ top: "score412"
+ top: "score413"
+ top: "score414"
+ top: "score415"
+ top: "score416"
+ top: "score417"
+ top: "score418"
+ top: "score419"
+ top: "score420"
+ top: "score421"
+ top: "score422"
+ top: "score423"
+ top: "score424"
+ top: "score425"
+ top: "score426"
+ top: "score427"
+ top: "score428"
+ top: "score429"
+ top: "score430"
+ top: "score431"
+ top: "score432"
+ top: "score433"
+ top: "score434"
+ top: "score435"
+ top: "score436"
+ top: "score437"
+ top: "score438"
+ top: "score439"
+ top: "score440"
+ top: "score441"
+ top: "score442"
+ top: "score443"
+ top: "score444"
+ top: "score445"
+ top: "score446"
+ top: "score447"
+ top: "score448"
+ top: "score449"
+ top: "score450"
+ top: "score451"
+ top: "score452"
+ top: "score453"
+ top: "score454"
+ top: "score455"
+ top: "score456"
+ top: "score457"
+ top: "score458"
+ top: "score459"
+ top: "score460"
+ top: "score461"
+ top: "score462"
+ top: "score463"
+ top: "score464"
+ top: "score465"
+ top: "score466"
+ top: "score467"
+ top: "score468"
+ top: "score469"
+ top: "score470"
+ top: "score471"
+ top: "score472"
+ top: "score473"
+ top: "score474"
+ top: "score475"
+ top: "score476"
+ top: "score477"
+ top: "score478"
+ top: "score479"
+ top: "score480"
+ top: "score481"
+ top: "score482"
+ top: "score483"
+ top: "score484"
+ top: "score485"
+ top: "score486"
+ top: "score487"
+ top: "score488"
+ top: "score489"
+ top: "score490"
+ top: "score491"
+ top: "score492"
+ top: "score493"
+ top: "score494"
+ top: "score495"
+ top: "score496"
+ top: "score497"
+ top: "score498"
+ top: "score499"
+ top: "score500"
+ top: "score501"
+ top: "score502"
+ top: "score503"
+ top: "score504"
+ top: "score505"
+ top: "score506"
+ top: "score507"
+ top: "score508"
+ top: "score509"
+ top: "score510"
+ top: "score511"
+ top: "score512"
+ slice_param {
+  axis: 1
+ }
+}
+
+layer {
+ name:"sumscore"
+ type:"Eltwise"
+ top:"sumscore"
+ bottom: "score1"
+ bottom: "score2"
+ bottom: "score3"
+ bottom: "score4"
+ bottom: "score5"
+ bottom: "score6"
+ bottom: "score7"
+ bottom: "score8"
+ bottom: "score9"
+ bottom: "score10"
+ bottom: "score11"
+ bottom: "score12"
+ bottom: "score13"
+ bottom: "score14"
+ bottom: "score15"
+ bottom: "score16"
+ bottom: "score17"
+ bottom: "score18"
+ bottom: "score19"
+ bottom: "score20"
+ bottom: "score21"
+ bottom: "score22"
+ bottom: "score23"
+ bottom: "score24"
+ bottom: "score25"
+ bottom: "score26"
+ bottom: "score27"
+ bottom: "score28"
+ bottom: "score29"
+ bottom: "score30"
+ bottom: "score31"
+ bottom: "score32"
+ bottom: "score33"
+ bottom: "score34"
+ bottom: "score35"
+ bottom: "score36"
+ bottom: "score37"
+ bottom: "score38"
+ bottom: "score39"
+ bottom: "score40"
+ bottom: "score41"
+ bottom: "score42"
+ bottom: "score43"
+ bottom: "score44"
+ bottom: "score45"
+ bottom: "score46"
+ bottom: "score47"
+ bottom: "score48"
+ bottom: "score49"
+ bottom: "score50"
+ bottom: "score51"
+ bottom: "score52"
+ bottom: "score53"
+ bottom: "score54"
+ bottom: "score55"
+ bottom: "score56"
+ bottom: "score57"
+ bottom: "score58"
+ bottom: "score59"
+ bottom: "score60"
+ bottom: "score61"
+ bottom: "score62"
+ bottom: "score63"
+ bottom: "score64"
+ bottom: "score65"
+ bottom: "score66"
+ bottom: "score67"
+ bottom: "score68"
+ bottom: "score69"
+ bottom: "score70"
+ bottom: "score71"
+ bottom: "score72"
+ bottom: "score73"
+ bottom: "score74"
+ bottom: "score75"
+ bottom: "score76"
+ bottom: "score77"
+ bottom: "score78"
+ bottom: "score79"
+ bottom: "score80"
+ bottom: "score81"
+ bottom: "score82"
+ bottom: "score83"
+ bottom: "score84"
+ bottom: "score85"
+ bottom: "score86"
+ bottom: "score87"
+ bottom: "score88"
+ bottom: "score89"
+ bottom: "score90"
+ bottom: "score91"
+ bottom: "score92"
+ bottom: "score93"
+ bottom: "score94"
+ bottom: "score95"
+ bottom: "score96"
+ bottom: "score97"
+ bottom: "score98"
+ bottom: "score99"
+ bottom: "score100"
+ bottom: "score101"
+ bottom: "score102"
+ bottom: "score103"
+ bottom: "score104"
+ bottom: "score105"
+ bottom: "score106"
+ bottom: "score107"
+ bottom: "score108"
+ bottom: "score109"
+ bottom: "score110"
+ bottom: "score111"
+ bottom: "score112"
+ bottom: "score113"
+ bottom: "score114"
+ bottom: "score115"
+ bottom: "score116"
+ bottom: "score117"
+ bottom: "score118"
+ bottom: "score119"
+ bottom: "score120"
+ bottom: "score121"
+ bottom: "score122"
+ bottom: "score123"
+ bottom: "score124"
+ bottom: "score125"
+ bottom: "score126"
+ bottom: "score127"
+ bottom: "score128"
+ bottom: "score129"
+ bottom: "score130"
+ bottom: "score131"
+ bottom: "score132"
+ bottom: "score133"
+ bottom: "score134"
+ bottom: "score135"
+ bottom: "score136"
+ bottom: "score137"
+ bottom: "score138"
+ bottom: "score139"
+ bottom: "score140"
+ bottom: "score141"
+ bottom: "score142"
+ bottom: "score143"
+ bottom: "score144"
+ bottom: "score145"
+ bottom: "score146"
+ bottom: "score147"
+ bottom: "score148"
+ bottom: "score149"
+ bottom: "score150"
+ bottom: "score151"
+ bottom: "score152"
+ bottom: "score153"
+ bottom: "score154"
+ bottom: "score155"
+ bottom: "score156"
+ bottom: "score157"
+ bottom: "score158"
+ bottom: "score159"
+ bottom: "score160"
+ bottom: "score161"
+ bottom: "score162"
+ bottom: "score163"
+ bottom: "score164"
+ bottom: "score165"
+ bottom: "score166"
+ bottom: "score167"
+ bottom: "score168"
+ bottom: "score169"
+ bottom: "score170"
+ bottom: "score171"
+ bottom: "score172"
+ bottom: "score173"
+ bottom: "score174"
+ bottom: "score175"
+ bottom: "score176"
+ bottom: "score177"
+ bottom: "score178"
+ bottom: "score179"
+ bottom: "score180"
+ bottom: "score181"
+ bottom: "score182"
+ bottom: "score183"
+ bottom: "score184"
+ bottom: "score185"
+ bottom: "score186"
+ bottom: "score187"
+ bottom: "score188"
+ bottom: "score189"
+ bottom: "score190"
+ bottom: "score191"
+ bottom: "score192"
+ bottom: "score193"
+ bottom: "score194"
+ bottom: "score195"
+ bottom: "score196"
+ bottom: "score197"
+ bottom: "score198"
+ bottom: "score199"
+ bottom: "score200"
+ bottom: "score201"
+ bottom: "score202"
+ bottom: "score203"
+ bottom: "score204"
+ bottom: "score205"
+ bottom: "score206"
+ bottom: "score207"
+ bottom: "score208"
+ bottom: "score209"
+ bottom: "score210"
+ bottom: "score211"
+ bottom: "score212"
+ bottom: "score213"
+ bottom: "score214"
+ bottom: "score215"
+ bottom: "score216"
+ bottom: "score217"
+ bottom: "score218"
+ bottom: "score219"
+ bottom: "score220"
+ bottom: "score221"
+ bottom: "score222"
+ bottom: "score223"
+ bottom: "score224"
+ bottom: "score225"
+ bottom: "score226"
+ bottom: "score227"
+ bottom: "score228"
+ bottom: "score229"
+ bottom: "score230"
+ bottom: "score231"
+ bottom: "score232"
+ bottom: "score233"
+ bottom: "score234"
+ bottom: "score235"
+ bottom: "score236"
+ bottom: "score237"
+ bottom: "score238"
+ bottom: "score239"
+ bottom: "score240"
+ bottom: "score241"
+ bottom: "score242"
+ bottom: "score243"
+ bottom: "score244"
+ bottom: "score245"
+ bottom: "score246"
+ bottom: "score247"
+ bottom: "score248"
+ bottom: "score249"
+ bottom: "score250"
+ bottom: "score251"
+ bottom: "score252"
+ bottom: "score253"
+ bottom: "score254"
+ bottom: "score255"
+ bottom: "score256"
+ bottom: "score257"
+ bottom: "score258"
+ bottom: "score259"
+ bottom: "score260"
+ bottom: "score261"
+ bottom: "score262"
+ bottom: "score263"
+ bottom: "score264"
+ bottom: "score265"
+ bottom: "score266"
+ bottom: "score267"
+ bottom: "score268"
+ bottom: "score269"
+ bottom: "score270"
+ bottom: "score271"
+ bottom: "score272"
+ bottom: "score273"
+ bottom: "score274"
+ bottom: "score275"
+ bottom: "score276"
+ bottom: "score277"
+ bottom: "score278"
+ bottom: "score279"
+ bottom: "score280"
+ bottom: "score281"
+ bottom: "score282"
+ bottom: "score283"
+ bottom: "score284"
+ bottom: "score285"
+ bottom: "score286"
+ bottom: "score287"
+ bottom: "score288"
+ bottom: "score289"
+ bottom: "score290"
+ bottom: "score291"
+ bottom: "score292"
+ bottom: "score293"
+ bottom: "score294"
+ bottom: "score295"
+ bottom: "score296"
+ bottom: "score297"
+ bottom: "score298"
+ bottom: "score299"
+ bottom: "score300"
+ bottom: "score301"
+ bottom: "score302"
+ bottom: "score303"
+ bottom: "score304"
+ bottom: "score305"
+ bottom: "score306"
+ bottom: "score307"
+ bottom: "score308"
+ bottom: "score309"
+ bottom: "score310"
+ bottom: "score311"
+ bottom: "score312"
+ bottom: "score313"
+ bottom: "score314"
+ bottom: "score315"
+ bottom: "score316"
+ bottom: "score317"
+ bottom: "score318"
+ bottom: "score319"
+ bottom: "score320"
+ bottom: "score321"
+ bottom: "score322"
+ bottom: "score323"
+ bottom: "score324"
+ bottom: "score325"
+ bottom: "score326"
+ bottom: "score327"
+ bottom: "score328"
+ bottom: "score329"
+ bottom: "score330"
+ bottom: "score331"
+ bottom: "score332"
+ bottom: "score333"
+ bottom: "score334"
+ bottom: "score335"
+ bottom: "score336"
+ bottom: "score337"
+ bottom: "score338"
+ bottom: "score339"
+ bottom: "score340"
+ bottom: "score341"
+ bottom: "score342"
+ bottom: "score343"
+ bottom: "score344"
+ bottom: "score345"
+ bottom: "score346"
+ bottom: "score347"
+ bottom: "score348"
+ bottom: "score349"
+ bottom: "score350"
+ bottom: "score351"
+ bottom: "score352"
+ bottom: "score353"
+ bottom: "score354"
+ bottom: "score355"
+ bottom: "score356"
+ bottom: "score357"
+ bottom: "score358"
+ bottom: "score359"
+ bottom: "score360"
+ bottom: "score361"
+ bottom: "score362"
+ bottom: "score363"
+ bottom: "score364"
+ bottom: "score365"
+ bottom: "score366"
+ bottom: "score367"
+ bottom: "score368"
+ bottom: "score369"
+ bottom: "score370"
+ bottom: "score371"
+ bottom: "score372"
+ bottom: "score373"
+ bottom: "score374"
+ bottom: "score375"
+ bottom: "score376"
+ bottom: "score377"
+ bottom: "score378"
+ bottom: "score379"
+ bottom: "score380"
+ bottom: "score381"
+ bottom: "score382"
+ bottom: "score383"
+ bottom: "score384"
+ bottom: "score385"
+ bottom: "score386"
+ bottom: "score387"
+ bottom: "score388"
+ bottom: "score389"
+ bottom: "score390"
+ bottom: "score391"
+ bottom: "score392"
+ bottom: "score393"
+ bottom: "score394"
+ bottom: "score395"
+ bottom: "score396"
+ bottom: "score397"
+ bottom: "score398"
+ bottom: "score399"
+ bottom: "score400"
+ bottom: "score401"
+ bottom: "score402"
+ bottom: "score403"
+ bottom: "score404"
+ bottom: "score405"
+ bottom: "score406"
+ bottom: "score407"
+ bottom: "score408"
+ bottom: "score409"
+ bottom: "score410"
+ bottom: "score411"
+ bottom: "score412"
+ bottom: "score413"
+ bottom: "score414"
+ bottom: "score415"
+ bottom: "score416"
+ bottom: "score417"
+ bottom: "score418"
+ bottom: "score419"
+ bottom: "score420"
+ bottom: "score421"
+ bottom: "score422"
+ bottom: "score423"
+ bottom: "score424"
+ bottom: "score425"
+ bottom: "score426"
+ bottom: "score427"
+ bottom: "score428"
+ bottom: "score429"
+ bottom: "score430"
+ bottom: "score431"
+ bottom: "score432"
+ bottom: "score433"
+ bottom: "score434"
+ bottom: "score435"
+ bottom: "score436"
+ bottom: "score437"
+ bottom: "score438"
+ bottom: "score439"
+ bottom: "score440"
+ bottom: "score441"
+ bottom: "score442"
+ bottom: "score443"
+ bottom: "score444"
+ bottom: "score445"
+ bottom: "score446"
+ bottom: "score447"
+ bottom: "score448"
+ bottom: "score449"
+ bottom: "score450"
+ bottom: "score451"
+ bottom: "score452"
+ bottom: "score453"
+ bottom: "score454"
+ bottom: "score455"
+ bottom: "score456"
+ bottom: "score457"
+ bottom: "score458"
+ bottom: "score459"
+ bottom: "score460"
+ bottom: "score461"
+ bottom: "score462"
+ bottom: "score463"
+ bottom: "score464"
+ bottom: "score465"
+ bottom: "score466"
+ bottom: "score467"
+ bottom: "score468"
+ bottom: "score469"
+ bottom: "score470"
+ bottom: "score471"
+ bottom: "score472"
+ bottom: "score473"
+ bottom: "score474"
+ bottom: "score475"
+ bottom: "score476"
+ bottom: "score477"
+ bottom: "score478"
+ bottom: "score479"
+ bottom: "score480"
+ bottom: "score481"
+ bottom: "score482"
+ bottom: "score483"
+ bottom: "score484"
+ bottom: "score485"
+ bottom: "score486"
+ bottom: "score487"
+ bottom: "score488"
+ bottom: "score489"
+ bottom: "score490"
+ bottom: "score491"
+ bottom: "score492"
+ bottom: "score493"
+ bottom: "score494"
+ bottom: "score495"
+ bottom: "score496"
+ bottom: "score497"
+ bottom: "score498"
+ bottom: "score499"
+ bottom: "score500"
+ bottom: "score501"
+ bottom: "score502"
+ bottom: "score503"
+ bottom: "score504"
+ bottom: "score505"
+ bottom: "score506"
+ bottom: "score507"
+ bottom: "score508"
+ bottom: "score509"
+ bottom: "score510"
+ bottom: "score511"
+ bottom: "score512"
+ eltwise_param {
+  operation: SUM
+ }
+}
+
+layer {
+ name:"avgscore"
+ type:"Power"
+ bottom:"sumscore"
+ top:"avgscore"
+ power_param {
+  power: 1
+  shift: 0
+  scale:0.001953125
+ }
+ include {
+  phase:TEST
+ }
+}
+
+layer {
+ name:"mae"
+ type:"MAELoss"
+ bottom:"avgscore"
+ bottom:"label"
+ top:"mae"
+ include {
+  phase:TEST
+ }
+}
+
+layer {
+ name:"mse"
+ type:"MSELoss"
+ bottom:"avgscore"
+ bottom:"label"
+ top:"mse"
+ include {
+  phase:TEST
+ }
+}
+
+layer {
+ name:"loss1"
+ type:"NCLLoss"
+ bottom: "score1"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss1"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss2"
+ type:"NCLLoss"
+ bottom: "score2"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss2"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss3"
+ type:"NCLLoss"
+ bottom: "score3"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss3"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss4"
+ type:"NCLLoss"
+ bottom: "score4"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss4"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss5"
+ type:"NCLLoss"
+ bottom: "score5"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss5"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss6"
+ type:"NCLLoss"
+ bottom: "score6"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss6"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss7"
+ type:"NCLLoss"
+ bottom: "score7"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss7"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss8"
+ type:"NCLLoss"
+ bottom: "score8"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss8"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss9"
+ type:"NCLLoss"
+ bottom: "score9"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss9"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss10"
+ type:"NCLLoss"
+ bottom: "score10"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss10"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss11"
+ type:"NCLLoss"
+ bottom: "score11"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss11"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss12"
+ type:"NCLLoss"
+ bottom: "score12"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss12"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss13"
+ type:"NCLLoss"
+ bottom: "score13"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss13"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss14"
+ type:"NCLLoss"
+ bottom: "score14"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss14"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss15"
+ type:"NCLLoss"
+ bottom: "score15"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss15"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss16"
+ type:"NCLLoss"
+ bottom: "score16"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss16"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss17"
+ type:"NCLLoss"
+ bottom: "score17"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss17"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss18"
+ type:"NCLLoss"
+ bottom: "score18"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss18"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss19"
+ type:"NCLLoss"
+ bottom: "score19"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss19"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss20"
+ type:"NCLLoss"
+ bottom: "score20"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss20"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss21"
+ type:"NCLLoss"
+ bottom: "score21"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss21"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss22"
+ type:"NCLLoss"
+ bottom: "score22"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss22"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss23"
+ type:"NCLLoss"
+ bottom: "score23"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss23"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss24"
+ type:"NCLLoss"
+ bottom: "score24"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss24"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss25"
+ type:"NCLLoss"
+ bottom: "score25"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss25"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss26"
+ type:"NCLLoss"
+ bottom: "score26"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss26"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss27"
+ type:"NCLLoss"
+ bottom: "score27"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss27"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss28"
+ type:"NCLLoss"
+ bottom: "score28"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss28"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss29"
+ type:"NCLLoss"
+ bottom: "score29"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss29"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss30"
+ type:"NCLLoss"
+ bottom: "score30"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss30"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss31"
+ type:"NCLLoss"
+ bottom: "score31"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss31"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss32"
+ type:"NCLLoss"
+ bottom: "score32"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss32"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss33"
+ type:"NCLLoss"
+ bottom: "score33"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss33"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss34"
+ type:"NCLLoss"
+ bottom: "score34"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss34"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss35"
+ type:"NCLLoss"
+ bottom: "score35"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss35"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss36"
+ type:"NCLLoss"
+ bottom: "score36"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss36"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss37"
+ type:"NCLLoss"
+ bottom: "score37"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss37"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss38"
+ type:"NCLLoss"
+ bottom: "score38"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss38"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss39"
+ type:"NCLLoss"
+ bottom: "score39"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss39"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss40"
+ type:"NCLLoss"
+ bottom: "score40"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss40"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss41"
+ type:"NCLLoss"
+ bottom: "score41"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss41"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss42"
+ type:"NCLLoss"
+ bottom: "score42"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss42"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss43"
+ type:"NCLLoss"
+ bottom: "score43"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss43"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss44"
+ type:"NCLLoss"
+ bottom: "score44"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss44"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss45"
+ type:"NCLLoss"
+ bottom: "score45"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss45"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss46"
+ type:"NCLLoss"
+ bottom: "score46"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss46"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss47"
+ type:"NCLLoss"
+ bottom: "score47"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss47"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss48"
+ type:"NCLLoss"
+ bottom: "score48"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss48"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss49"
+ type:"NCLLoss"
+ bottom: "score49"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss49"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss50"
+ type:"NCLLoss"
+ bottom: "score50"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss50"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss51"
+ type:"NCLLoss"
+ bottom: "score51"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss51"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss52"
+ type:"NCLLoss"
+ bottom: "score52"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss52"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss53"
+ type:"NCLLoss"
+ bottom: "score53"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss53"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss54"
+ type:"NCLLoss"
+ bottom: "score54"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss54"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss55"
+ type:"NCLLoss"
+ bottom: "score55"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss55"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss56"
+ type:"NCLLoss"
+ bottom: "score56"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss56"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss57"
+ type:"NCLLoss"
+ bottom: "score57"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss57"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss58"
+ type:"NCLLoss"
+ bottom: "score58"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss58"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss59"
+ type:"NCLLoss"
+ bottom: "score59"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss59"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss60"
+ type:"NCLLoss"
+ bottom: "score60"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss60"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss61"
+ type:"NCLLoss"
+ bottom: "score61"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss61"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss62"
+ type:"NCLLoss"
+ bottom: "score62"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss62"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss63"
+ type:"NCLLoss"
+ bottom: "score63"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss63"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss64"
+ type:"NCLLoss"
+ bottom: "score64"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss64"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss65"
+ type:"NCLLoss"
+ bottom: "score65"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss65"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss66"
+ type:"NCLLoss"
+ bottom: "score66"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss66"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss67"
+ type:"NCLLoss"
+ bottom: "score67"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss67"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss68"
+ type:"NCLLoss"
+ bottom: "score68"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss68"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss69"
+ type:"NCLLoss"
+ bottom: "score69"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss69"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss70"
+ type:"NCLLoss"
+ bottom: "score70"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss70"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss71"
+ type:"NCLLoss"
+ bottom: "score71"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss71"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss72"
+ type:"NCLLoss"
+ bottom: "score72"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss72"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss73"
+ type:"NCLLoss"
+ bottom: "score73"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss73"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss74"
+ type:"NCLLoss"
+ bottom: "score74"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss74"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss75"
+ type:"NCLLoss"
+ bottom: "score75"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss75"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss76"
+ type:"NCLLoss"
+ bottom: "score76"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss76"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss77"
+ type:"NCLLoss"
+ bottom: "score77"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss77"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss78"
+ type:"NCLLoss"
+ bottom: "score78"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss78"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss79"
+ type:"NCLLoss"
+ bottom: "score79"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss79"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss80"
+ type:"NCLLoss"
+ bottom: "score80"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss80"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss81"
+ type:"NCLLoss"
+ bottom: "score81"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss81"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss82"
+ type:"NCLLoss"
+ bottom: "score82"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss82"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss83"
+ type:"NCLLoss"
+ bottom: "score83"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss83"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss84"
+ type:"NCLLoss"
+ bottom: "score84"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss84"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss85"
+ type:"NCLLoss"
+ bottom: "score85"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss85"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss86"
+ type:"NCLLoss"
+ bottom: "score86"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss86"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss87"
+ type:"NCLLoss"
+ bottom: "score87"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss87"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss88"
+ type:"NCLLoss"
+ bottom: "score88"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss88"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss89"
+ type:"NCLLoss"
+ bottom: "score89"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss89"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss90"
+ type:"NCLLoss"
+ bottom: "score90"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss90"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss91"
+ type:"NCLLoss"
+ bottom: "score91"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss91"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss92"
+ type:"NCLLoss"
+ bottom: "score92"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss92"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss93"
+ type:"NCLLoss"
+ bottom: "score93"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss93"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss94"
+ type:"NCLLoss"
+ bottom: "score94"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss94"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss95"
+ type:"NCLLoss"
+ bottom: "score95"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss95"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss96"
+ type:"NCLLoss"
+ bottom: "score96"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss96"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss97"
+ type:"NCLLoss"
+ bottom: "score97"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss97"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss98"
+ type:"NCLLoss"
+ bottom: "score98"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss98"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss99"
+ type:"NCLLoss"
+ bottom: "score99"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss99"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss100"
+ type:"NCLLoss"
+ bottom: "score100"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss100"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss101"
+ type:"NCLLoss"
+ bottom: "score101"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss101"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss102"
+ type:"NCLLoss"
+ bottom: "score102"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss102"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss103"
+ type:"NCLLoss"
+ bottom: "score103"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss103"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss104"
+ type:"NCLLoss"
+ bottom: "score104"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss104"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss105"
+ type:"NCLLoss"
+ bottom: "score105"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss105"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss106"
+ type:"NCLLoss"
+ bottom: "score106"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss106"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss107"
+ type:"NCLLoss"
+ bottom: "score107"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss107"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss108"
+ type:"NCLLoss"
+ bottom: "score108"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss108"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss109"
+ type:"NCLLoss"
+ bottom: "score109"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss109"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss110"
+ type:"NCLLoss"
+ bottom: "score110"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss110"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss111"
+ type:"NCLLoss"
+ bottom: "score111"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss111"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss112"
+ type:"NCLLoss"
+ bottom: "score112"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss112"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss113"
+ type:"NCLLoss"
+ bottom: "score113"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss113"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss114"
+ type:"NCLLoss"
+ bottom: "score114"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss114"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss115"
+ type:"NCLLoss"
+ bottom: "score115"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss115"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss116"
+ type:"NCLLoss"
+ bottom: "score116"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss116"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss117"
+ type:"NCLLoss"
+ bottom: "score117"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss117"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss118"
+ type:"NCLLoss"
+ bottom: "score118"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss118"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss119"
+ type:"NCLLoss"
+ bottom: "score119"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss119"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss120"
+ type:"NCLLoss"
+ bottom: "score120"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss120"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss121"
+ type:"NCLLoss"
+ bottom: "score121"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss121"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss122"
+ type:"NCLLoss"
+ bottom: "score122"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss122"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss123"
+ type:"NCLLoss"
+ bottom: "score123"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss123"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss124"
+ type:"NCLLoss"
+ bottom: "score124"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss124"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss125"
+ type:"NCLLoss"
+ bottom: "score125"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss125"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss126"
+ type:"NCLLoss"
+ bottom: "score126"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss126"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss127"
+ type:"NCLLoss"
+ bottom: "score127"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss127"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss128"
+ type:"NCLLoss"
+ bottom: "score128"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss128"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss129"
+ type:"NCLLoss"
+ bottom: "score129"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss129"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss130"
+ type:"NCLLoss"
+ bottom: "score130"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss130"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss131"
+ type:"NCLLoss"
+ bottom: "score131"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss131"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss132"
+ type:"NCLLoss"
+ bottom: "score132"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss132"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss133"
+ type:"NCLLoss"
+ bottom: "score133"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss133"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss134"
+ type:"NCLLoss"
+ bottom: "score134"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss134"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss135"
+ type:"NCLLoss"
+ bottom: "score135"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss135"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss136"
+ type:"NCLLoss"
+ bottom: "score136"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss136"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss137"
+ type:"NCLLoss"
+ bottom: "score137"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss137"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss138"
+ type:"NCLLoss"
+ bottom: "score138"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss138"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss139"
+ type:"NCLLoss"
+ bottom: "score139"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss139"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss140"
+ type:"NCLLoss"
+ bottom: "score140"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss140"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss141"
+ type:"NCLLoss"
+ bottom: "score141"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss141"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss142"
+ type:"NCLLoss"
+ bottom: "score142"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss142"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss143"
+ type:"NCLLoss"
+ bottom: "score143"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss143"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss144"
+ type:"NCLLoss"
+ bottom: "score144"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss144"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss145"
+ type:"NCLLoss"
+ bottom: "score145"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss145"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss146"
+ type:"NCLLoss"
+ bottom: "score146"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss146"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss147"
+ type:"NCLLoss"
+ bottom: "score147"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss147"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss148"
+ type:"NCLLoss"
+ bottom: "score148"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss148"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss149"
+ type:"NCLLoss"
+ bottom: "score149"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss149"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss150"
+ type:"NCLLoss"
+ bottom: "score150"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss150"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss151"
+ type:"NCLLoss"
+ bottom: "score151"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss151"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss152"
+ type:"NCLLoss"
+ bottom: "score152"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss152"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss153"
+ type:"NCLLoss"
+ bottom: "score153"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss153"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss154"
+ type:"NCLLoss"
+ bottom: "score154"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss154"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss155"
+ type:"NCLLoss"
+ bottom: "score155"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss155"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss156"
+ type:"NCLLoss"
+ bottom: "score156"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss156"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss157"
+ type:"NCLLoss"
+ bottom: "score157"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss157"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss158"
+ type:"NCLLoss"
+ bottom: "score158"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss158"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss159"
+ type:"NCLLoss"
+ bottom: "score159"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss159"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss160"
+ type:"NCLLoss"
+ bottom: "score160"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss160"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss161"
+ type:"NCLLoss"
+ bottom: "score161"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss161"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss162"
+ type:"NCLLoss"
+ bottom: "score162"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss162"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss163"
+ type:"NCLLoss"
+ bottom: "score163"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss163"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss164"
+ type:"NCLLoss"
+ bottom: "score164"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss164"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss165"
+ type:"NCLLoss"
+ bottom: "score165"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss165"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss166"
+ type:"NCLLoss"
+ bottom: "score166"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss166"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss167"
+ type:"NCLLoss"
+ bottom: "score167"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss167"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss168"
+ type:"NCLLoss"
+ bottom: "score168"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss168"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss169"
+ type:"NCLLoss"
+ bottom: "score169"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss169"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss170"
+ type:"NCLLoss"
+ bottom: "score170"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss170"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss171"
+ type:"NCLLoss"
+ bottom: "score171"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss171"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss172"
+ type:"NCLLoss"
+ bottom: "score172"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss172"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss173"
+ type:"NCLLoss"
+ bottom: "score173"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss173"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss174"
+ type:"NCLLoss"
+ bottom: "score174"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss174"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss175"
+ type:"NCLLoss"
+ bottom: "score175"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss175"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss176"
+ type:"NCLLoss"
+ bottom: "score176"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss176"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss177"
+ type:"NCLLoss"
+ bottom: "score177"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss177"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss178"
+ type:"NCLLoss"
+ bottom: "score178"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss178"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss179"
+ type:"NCLLoss"
+ bottom: "score179"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss179"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss180"
+ type:"NCLLoss"
+ bottom: "score180"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss180"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss181"
+ type:"NCLLoss"
+ bottom: "score181"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss181"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss182"
+ type:"NCLLoss"
+ bottom: "score182"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss182"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss183"
+ type:"NCLLoss"
+ bottom: "score183"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss183"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss184"
+ type:"NCLLoss"
+ bottom: "score184"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss184"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss185"
+ type:"NCLLoss"
+ bottom: "score185"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss185"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss186"
+ type:"NCLLoss"
+ bottom: "score186"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss186"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss187"
+ type:"NCLLoss"
+ bottom: "score187"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss187"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss188"
+ type:"NCLLoss"
+ bottom: "score188"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss188"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss189"
+ type:"NCLLoss"
+ bottom: "score189"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss189"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss190"
+ type:"NCLLoss"
+ bottom: "score190"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss190"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss191"
+ type:"NCLLoss"
+ bottom: "score191"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss191"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss192"
+ type:"NCLLoss"
+ bottom: "score192"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss192"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss193"
+ type:"NCLLoss"
+ bottom: "score193"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss193"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss194"
+ type:"NCLLoss"
+ bottom: "score194"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss194"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss195"
+ type:"NCLLoss"
+ bottom: "score195"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss195"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss196"
+ type:"NCLLoss"
+ bottom: "score196"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss196"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss197"
+ type:"NCLLoss"
+ bottom: "score197"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss197"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss198"
+ type:"NCLLoss"
+ bottom: "score198"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss198"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss199"
+ type:"NCLLoss"
+ bottom: "score199"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss199"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss200"
+ type:"NCLLoss"
+ bottom: "score200"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss200"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss201"
+ type:"NCLLoss"
+ bottom: "score201"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss201"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss202"
+ type:"NCLLoss"
+ bottom: "score202"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss202"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss203"
+ type:"NCLLoss"
+ bottom: "score203"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss203"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss204"
+ type:"NCLLoss"
+ bottom: "score204"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss204"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss205"
+ type:"NCLLoss"
+ bottom: "score205"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss205"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss206"
+ type:"NCLLoss"
+ bottom: "score206"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss206"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss207"
+ type:"NCLLoss"
+ bottom: "score207"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss207"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss208"
+ type:"NCLLoss"
+ bottom: "score208"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss208"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss209"
+ type:"NCLLoss"
+ bottom: "score209"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss209"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss210"
+ type:"NCLLoss"
+ bottom: "score210"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss210"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss211"
+ type:"NCLLoss"
+ bottom: "score211"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss211"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss212"
+ type:"NCLLoss"
+ bottom: "score212"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss212"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss213"
+ type:"NCLLoss"
+ bottom: "score213"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss213"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss214"
+ type:"NCLLoss"
+ bottom: "score214"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss214"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss215"
+ type:"NCLLoss"
+ bottom: "score215"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss215"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss216"
+ type:"NCLLoss"
+ bottom: "score216"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss216"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss217"
+ type:"NCLLoss"
+ bottom: "score217"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss217"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss218"
+ type:"NCLLoss"
+ bottom: "score218"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss218"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss219"
+ type:"NCLLoss"
+ bottom: "score219"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss219"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss220"
+ type:"NCLLoss"
+ bottom: "score220"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss220"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss221"
+ type:"NCLLoss"
+ bottom: "score221"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss221"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss222"
+ type:"NCLLoss"
+ bottom: "score222"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss222"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss223"
+ type:"NCLLoss"
+ bottom: "score223"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss223"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss224"
+ type:"NCLLoss"
+ bottom: "score224"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss224"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss225"
+ type:"NCLLoss"
+ bottom: "score225"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss225"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss226"
+ type:"NCLLoss"
+ bottom: "score226"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss226"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss227"
+ type:"NCLLoss"
+ bottom: "score227"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss227"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss228"
+ type:"NCLLoss"
+ bottom: "score228"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss228"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss229"
+ type:"NCLLoss"
+ bottom: "score229"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss229"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss230"
+ type:"NCLLoss"
+ bottom: "score230"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss230"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss231"
+ type:"NCLLoss"
+ bottom: "score231"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss231"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss232"
+ type:"NCLLoss"
+ bottom: "score232"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss232"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss233"
+ type:"NCLLoss"
+ bottom: "score233"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss233"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss234"
+ type:"NCLLoss"
+ bottom: "score234"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss234"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss235"
+ type:"NCLLoss"
+ bottom: "score235"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss235"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss236"
+ type:"NCLLoss"
+ bottom: "score236"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss236"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss237"
+ type:"NCLLoss"
+ bottom: "score237"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss237"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss238"
+ type:"NCLLoss"
+ bottom: "score238"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss238"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss239"
+ type:"NCLLoss"
+ bottom: "score239"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss239"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss240"
+ type:"NCLLoss"
+ bottom: "score240"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss240"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss241"
+ type:"NCLLoss"
+ bottom: "score241"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss241"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss242"
+ type:"NCLLoss"
+ bottom: "score242"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss242"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss243"
+ type:"NCLLoss"
+ bottom: "score243"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss243"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss244"
+ type:"NCLLoss"
+ bottom: "score244"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss244"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss245"
+ type:"NCLLoss"
+ bottom: "score245"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss245"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss246"
+ type:"NCLLoss"
+ bottom: "score246"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss246"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss247"
+ type:"NCLLoss"
+ bottom: "score247"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss247"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss248"
+ type:"NCLLoss"
+ bottom: "score248"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss248"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss249"
+ type:"NCLLoss"
+ bottom: "score249"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss249"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss250"
+ type:"NCLLoss"
+ bottom: "score250"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss250"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss251"
+ type:"NCLLoss"
+ bottom: "score251"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss251"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss252"
+ type:"NCLLoss"
+ bottom: "score252"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss252"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss253"
+ type:"NCLLoss"
+ bottom: "score253"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss253"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss254"
+ type:"NCLLoss"
+ bottom: "score254"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss254"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss255"
+ type:"NCLLoss"
+ bottom: "score255"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss255"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss256"
+ type:"NCLLoss"
+ bottom: "score256"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss256"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss257"
+ type:"NCLLoss"
+ bottom: "score257"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss257"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss258"
+ type:"NCLLoss"
+ bottom: "score258"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss258"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss259"
+ type:"NCLLoss"
+ bottom: "score259"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss259"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss260"
+ type:"NCLLoss"
+ bottom: "score260"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss260"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss261"
+ type:"NCLLoss"
+ bottom: "score261"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss261"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss262"
+ type:"NCLLoss"
+ bottom: "score262"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss262"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss263"
+ type:"NCLLoss"
+ bottom: "score263"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss263"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss264"
+ type:"NCLLoss"
+ bottom: "score264"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss264"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss265"
+ type:"NCLLoss"
+ bottom: "score265"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss265"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss266"
+ type:"NCLLoss"
+ bottom: "score266"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss266"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss267"
+ type:"NCLLoss"
+ bottom: "score267"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss267"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss268"
+ type:"NCLLoss"
+ bottom: "score268"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss268"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss269"
+ type:"NCLLoss"
+ bottom: "score269"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss269"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss270"
+ type:"NCLLoss"
+ bottom: "score270"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss270"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss271"
+ type:"NCLLoss"
+ bottom: "score271"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss271"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss272"
+ type:"NCLLoss"
+ bottom: "score272"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss272"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss273"
+ type:"NCLLoss"
+ bottom: "score273"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss273"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss274"
+ type:"NCLLoss"
+ bottom: "score274"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss274"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss275"
+ type:"NCLLoss"
+ bottom: "score275"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss275"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss276"
+ type:"NCLLoss"
+ bottom: "score276"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss276"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss277"
+ type:"NCLLoss"
+ bottom: "score277"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss277"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss278"
+ type:"NCLLoss"
+ bottom: "score278"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss278"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss279"
+ type:"NCLLoss"
+ bottom: "score279"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss279"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss280"
+ type:"NCLLoss"
+ bottom: "score280"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss280"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss281"
+ type:"NCLLoss"
+ bottom: "score281"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss281"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss282"
+ type:"NCLLoss"
+ bottom: "score282"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss282"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss283"
+ type:"NCLLoss"
+ bottom: "score283"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss283"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss284"
+ type:"NCLLoss"
+ bottom: "score284"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss284"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss285"
+ type:"NCLLoss"
+ bottom: "score285"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss285"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss286"
+ type:"NCLLoss"
+ bottom: "score286"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss286"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss287"
+ type:"NCLLoss"
+ bottom: "score287"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss287"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss288"
+ type:"NCLLoss"
+ bottom: "score288"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss288"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss289"
+ type:"NCLLoss"
+ bottom: "score289"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss289"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss290"
+ type:"NCLLoss"
+ bottom: "score290"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss290"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss291"
+ type:"NCLLoss"
+ bottom: "score291"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss291"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss292"
+ type:"NCLLoss"
+ bottom: "score292"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss292"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss293"
+ type:"NCLLoss"
+ bottom: "score293"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss293"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss294"
+ type:"NCLLoss"
+ bottom: "score294"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss294"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss295"
+ type:"NCLLoss"
+ bottom: "score295"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss295"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss296"
+ type:"NCLLoss"
+ bottom: "score296"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss296"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss297"
+ type:"NCLLoss"
+ bottom: "score297"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss297"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss298"
+ type:"NCLLoss"
+ bottom: "score298"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss298"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss299"
+ type:"NCLLoss"
+ bottom: "score299"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss299"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss300"
+ type:"NCLLoss"
+ bottom: "score300"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss300"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss301"
+ type:"NCLLoss"
+ bottom: "score301"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss301"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss302"
+ type:"NCLLoss"
+ bottom: "score302"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss302"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss303"
+ type:"NCLLoss"
+ bottom: "score303"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss303"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss304"
+ type:"NCLLoss"
+ bottom: "score304"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss304"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss305"
+ type:"NCLLoss"
+ bottom: "score305"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss305"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss306"
+ type:"NCLLoss"
+ bottom: "score306"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss306"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss307"
+ type:"NCLLoss"
+ bottom: "score307"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss307"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss308"
+ type:"NCLLoss"
+ bottom: "score308"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss308"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss309"
+ type:"NCLLoss"
+ bottom: "score309"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss309"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss310"
+ type:"NCLLoss"
+ bottom: "score310"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss310"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss311"
+ type:"NCLLoss"
+ bottom: "score311"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss311"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss312"
+ type:"NCLLoss"
+ bottom: "score312"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss312"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss313"
+ type:"NCLLoss"
+ bottom: "score313"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss313"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss314"
+ type:"NCLLoss"
+ bottom: "score314"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss314"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss315"
+ type:"NCLLoss"
+ bottom: "score315"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss315"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss316"
+ type:"NCLLoss"
+ bottom: "score316"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss316"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss317"
+ type:"NCLLoss"
+ bottom: "score317"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss317"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss318"
+ type:"NCLLoss"
+ bottom: "score318"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss318"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss319"
+ type:"NCLLoss"
+ bottom: "score319"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss319"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss320"
+ type:"NCLLoss"
+ bottom: "score320"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss320"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss321"
+ type:"NCLLoss"
+ bottom: "score321"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss321"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss322"
+ type:"NCLLoss"
+ bottom: "score322"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss322"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss323"
+ type:"NCLLoss"
+ bottom: "score323"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss323"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss324"
+ type:"NCLLoss"
+ bottom: "score324"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss324"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss325"
+ type:"NCLLoss"
+ bottom: "score325"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss325"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss326"
+ type:"NCLLoss"
+ bottom: "score326"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss326"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss327"
+ type:"NCLLoss"
+ bottom: "score327"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss327"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss328"
+ type:"NCLLoss"
+ bottom: "score328"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss328"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss329"
+ type:"NCLLoss"
+ bottom: "score329"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss329"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss330"
+ type:"NCLLoss"
+ bottom: "score330"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss330"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss331"
+ type:"NCLLoss"
+ bottom: "score331"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss331"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss332"
+ type:"NCLLoss"
+ bottom: "score332"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss332"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss333"
+ type:"NCLLoss"
+ bottom: "score333"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss333"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss334"
+ type:"NCLLoss"
+ bottom: "score334"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss334"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss335"
+ type:"NCLLoss"
+ bottom: "score335"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss335"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss336"
+ type:"NCLLoss"
+ bottom: "score336"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss336"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss337"
+ type:"NCLLoss"
+ bottom: "score337"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss337"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss338"
+ type:"NCLLoss"
+ bottom: "score338"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss338"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss339"
+ type:"NCLLoss"
+ bottom: "score339"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss339"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss340"
+ type:"NCLLoss"
+ bottom: "score340"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss340"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss341"
+ type:"NCLLoss"
+ bottom: "score341"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss341"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss342"
+ type:"NCLLoss"
+ bottom: "score342"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss342"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss343"
+ type:"NCLLoss"
+ bottom: "score343"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss343"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss344"
+ type:"NCLLoss"
+ bottom: "score344"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss344"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss345"
+ type:"NCLLoss"
+ bottom: "score345"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss345"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss346"
+ type:"NCLLoss"
+ bottom: "score346"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss346"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss347"
+ type:"NCLLoss"
+ bottom: "score347"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss347"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss348"
+ type:"NCLLoss"
+ bottom: "score348"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss348"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss349"
+ type:"NCLLoss"
+ bottom: "score349"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss349"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss350"
+ type:"NCLLoss"
+ bottom: "score350"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss350"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss351"
+ type:"NCLLoss"
+ bottom: "score351"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss351"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss352"
+ type:"NCLLoss"
+ bottom: "score352"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss352"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss353"
+ type:"NCLLoss"
+ bottom: "score353"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss353"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss354"
+ type:"NCLLoss"
+ bottom: "score354"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss354"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss355"
+ type:"NCLLoss"
+ bottom: "score355"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss355"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss356"
+ type:"NCLLoss"
+ bottom: "score356"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss356"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss357"
+ type:"NCLLoss"
+ bottom: "score357"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss357"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss358"
+ type:"NCLLoss"
+ bottom: "score358"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss358"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss359"
+ type:"NCLLoss"
+ bottom: "score359"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss359"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss360"
+ type:"NCLLoss"
+ bottom: "score360"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss360"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss361"
+ type:"NCLLoss"
+ bottom: "score361"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss361"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss362"
+ type:"NCLLoss"
+ bottom: "score362"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss362"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss363"
+ type:"NCLLoss"
+ bottom: "score363"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss363"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss364"
+ type:"NCLLoss"
+ bottom: "score364"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss364"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss365"
+ type:"NCLLoss"
+ bottom: "score365"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss365"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss366"
+ type:"NCLLoss"
+ bottom: "score366"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss366"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss367"
+ type:"NCLLoss"
+ bottom: "score367"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss367"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss368"
+ type:"NCLLoss"
+ bottom: "score368"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss368"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss369"
+ type:"NCLLoss"
+ bottom: "score369"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss369"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss370"
+ type:"NCLLoss"
+ bottom: "score370"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss370"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss371"
+ type:"NCLLoss"
+ bottom: "score371"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss371"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss372"
+ type:"NCLLoss"
+ bottom: "score372"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss372"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss373"
+ type:"NCLLoss"
+ bottom: "score373"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss373"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss374"
+ type:"NCLLoss"
+ bottom: "score374"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss374"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss375"
+ type:"NCLLoss"
+ bottom: "score375"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss375"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss376"
+ type:"NCLLoss"
+ bottom: "score376"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss376"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss377"
+ type:"NCLLoss"
+ bottom: "score377"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss377"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss378"
+ type:"NCLLoss"
+ bottom: "score378"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss378"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss379"
+ type:"NCLLoss"
+ bottom: "score379"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss379"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss380"
+ type:"NCLLoss"
+ bottom: "score380"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss380"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss381"
+ type:"NCLLoss"
+ bottom: "score381"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss381"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss382"
+ type:"NCLLoss"
+ bottom: "score382"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss382"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss383"
+ type:"NCLLoss"
+ bottom: "score383"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss383"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss384"
+ type:"NCLLoss"
+ bottom: "score384"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss384"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss385"
+ type:"NCLLoss"
+ bottom: "score385"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss385"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss386"
+ type:"NCLLoss"
+ bottom: "score386"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss386"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss387"
+ type:"NCLLoss"
+ bottom: "score387"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss387"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss388"
+ type:"NCLLoss"
+ bottom: "score388"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss388"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss389"
+ type:"NCLLoss"
+ bottom: "score389"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss389"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss390"
+ type:"NCLLoss"
+ bottom: "score390"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss390"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss391"
+ type:"NCLLoss"
+ bottom: "score391"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss391"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss392"
+ type:"NCLLoss"
+ bottom: "score392"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss392"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss393"
+ type:"NCLLoss"
+ bottom: "score393"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss393"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss394"
+ type:"NCLLoss"
+ bottom: "score394"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss394"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss395"
+ type:"NCLLoss"
+ bottom: "score395"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss395"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss396"
+ type:"NCLLoss"
+ bottom: "score396"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss396"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss397"
+ type:"NCLLoss"
+ bottom: "score397"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss397"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss398"
+ type:"NCLLoss"
+ bottom: "score398"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss398"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss399"
+ type:"NCLLoss"
+ bottom: "score399"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss399"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss400"
+ type:"NCLLoss"
+ bottom: "score400"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss400"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss401"
+ type:"NCLLoss"
+ bottom: "score401"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss401"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss402"
+ type:"NCLLoss"
+ bottom: "score402"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss402"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss403"
+ type:"NCLLoss"
+ bottom: "score403"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss403"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss404"
+ type:"NCLLoss"
+ bottom: "score404"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss404"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss405"
+ type:"NCLLoss"
+ bottom: "score405"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss405"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss406"
+ type:"NCLLoss"
+ bottom: "score406"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss406"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss407"
+ type:"NCLLoss"
+ bottom: "score407"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss407"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss408"
+ type:"NCLLoss"
+ bottom: "score408"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss408"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss409"
+ type:"NCLLoss"
+ bottom: "score409"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss409"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss410"
+ type:"NCLLoss"
+ bottom: "score410"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss410"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss411"
+ type:"NCLLoss"
+ bottom: "score411"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss411"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss412"
+ type:"NCLLoss"
+ bottom: "score412"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss412"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss413"
+ type:"NCLLoss"
+ bottom: "score413"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss413"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss414"
+ type:"NCLLoss"
+ bottom: "score414"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss414"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss415"
+ type:"NCLLoss"
+ bottom: "score415"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss415"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss416"
+ type:"NCLLoss"
+ bottom: "score416"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss416"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss417"
+ type:"NCLLoss"
+ bottom: "score417"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss417"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss418"
+ type:"NCLLoss"
+ bottom: "score418"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss418"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss419"
+ type:"NCLLoss"
+ bottom: "score419"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss419"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss420"
+ type:"NCLLoss"
+ bottom: "score420"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss420"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss421"
+ type:"NCLLoss"
+ bottom: "score421"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss421"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss422"
+ type:"NCLLoss"
+ bottom: "score422"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss422"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss423"
+ type:"NCLLoss"
+ bottom: "score423"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss423"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss424"
+ type:"NCLLoss"
+ bottom: "score424"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss424"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss425"
+ type:"NCLLoss"
+ bottom: "score425"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss425"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss426"
+ type:"NCLLoss"
+ bottom: "score426"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss426"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss427"
+ type:"NCLLoss"
+ bottom: "score427"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss427"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss428"
+ type:"NCLLoss"
+ bottom: "score428"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss428"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss429"
+ type:"NCLLoss"
+ bottom: "score429"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss429"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss430"
+ type:"NCLLoss"
+ bottom: "score430"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss430"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss431"
+ type:"NCLLoss"
+ bottom: "score431"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss431"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss432"
+ type:"NCLLoss"
+ bottom: "score432"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss432"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss433"
+ type:"NCLLoss"
+ bottom: "score433"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss433"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss434"
+ type:"NCLLoss"
+ bottom: "score434"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss434"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss435"
+ type:"NCLLoss"
+ bottom: "score435"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss435"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss436"
+ type:"NCLLoss"
+ bottom: "score436"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss436"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss437"
+ type:"NCLLoss"
+ bottom: "score437"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss437"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss438"
+ type:"NCLLoss"
+ bottom: "score438"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss438"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss439"
+ type:"NCLLoss"
+ bottom: "score439"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss439"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss440"
+ type:"NCLLoss"
+ bottom: "score440"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss440"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss441"
+ type:"NCLLoss"
+ bottom: "score441"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss441"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss442"
+ type:"NCLLoss"
+ bottom: "score442"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss442"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss443"
+ type:"NCLLoss"
+ bottom: "score443"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss443"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss444"
+ type:"NCLLoss"
+ bottom: "score444"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss444"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss445"
+ type:"NCLLoss"
+ bottom: "score445"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss445"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss446"
+ type:"NCLLoss"
+ bottom: "score446"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss446"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss447"
+ type:"NCLLoss"
+ bottom: "score447"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss447"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss448"
+ type:"NCLLoss"
+ bottom: "score448"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss448"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss449"
+ type:"NCLLoss"
+ bottom: "score449"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss449"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss450"
+ type:"NCLLoss"
+ bottom: "score450"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss450"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss451"
+ type:"NCLLoss"
+ bottom: "score451"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss451"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss452"
+ type:"NCLLoss"
+ bottom: "score452"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss452"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss453"
+ type:"NCLLoss"
+ bottom: "score453"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss453"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss454"
+ type:"NCLLoss"
+ bottom: "score454"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss454"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss455"
+ type:"NCLLoss"
+ bottom: "score455"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss455"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss456"
+ type:"NCLLoss"
+ bottom: "score456"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss456"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss457"
+ type:"NCLLoss"
+ bottom: "score457"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss457"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss458"
+ type:"NCLLoss"
+ bottom: "score458"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss458"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss459"
+ type:"NCLLoss"
+ bottom: "score459"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss459"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss460"
+ type:"NCLLoss"
+ bottom: "score460"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss460"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss461"
+ type:"NCLLoss"
+ bottom: "score461"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss461"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss462"
+ type:"NCLLoss"
+ bottom: "score462"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss462"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss463"
+ type:"NCLLoss"
+ bottom: "score463"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss463"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss464"
+ type:"NCLLoss"
+ bottom: "score464"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss464"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss465"
+ type:"NCLLoss"
+ bottom: "score465"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss465"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss466"
+ type:"NCLLoss"
+ bottom: "score466"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss466"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss467"
+ type:"NCLLoss"
+ bottom: "score467"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss467"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss468"
+ type:"NCLLoss"
+ bottom: "score468"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss468"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss469"
+ type:"NCLLoss"
+ bottom: "score469"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss469"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss470"
+ type:"NCLLoss"
+ bottom: "score470"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss470"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss471"
+ type:"NCLLoss"
+ bottom: "score471"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss471"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss472"
+ type:"NCLLoss"
+ bottom: "score472"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss472"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss473"
+ type:"NCLLoss"
+ bottom: "score473"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss473"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss474"
+ type:"NCLLoss"
+ bottom: "score474"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss474"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss475"
+ type:"NCLLoss"
+ bottom: "score475"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss475"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss476"
+ type:"NCLLoss"
+ bottom: "score476"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss476"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss477"
+ type:"NCLLoss"
+ bottom: "score477"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss477"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss478"
+ type:"NCLLoss"
+ bottom: "score478"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss478"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss479"
+ type:"NCLLoss"
+ bottom: "score479"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss479"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss480"
+ type:"NCLLoss"
+ bottom: "score480"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss480"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss481"
+ type:"NCLLoss"
+ bottom: "score481"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss481"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss482"
+ type:"NCLLoss"
+ bottom: "score482"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss482"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss483"
+ type:"NCLLoss"
+ bottom: "score483"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss483"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss484"
+ type:"NCLLoss"
+ bottom: "score484"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss484"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss485"
+ type:"NCLLoss"
+ bottom: "score485"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss485"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss486"
+ type:"NCLLoss"
+ bottom: "score486"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss486"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss487"
+ type:"NCLLoss"
+ bottom: "score487"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss487"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss488"
+ type:"NCLLoss"
+ bottom: "score488"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss488"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss489"
+ type:"NCLLoss"
+ bottom: "score489"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss489"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss490"
+ type:"NCLLoss"
+ bottom: "score490"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss490"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss491"
+ type:"NCLLoss"
+ bottom: "score491"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss491"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss492"
+ type:"NCLLoss"
+ bottom: "score492"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss492"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss493"
+ type:"NCLLoss"
+ bottom: "score493"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss493"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss494"
+ type:"NCLLoss"
+ bottom: "score494"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss494"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss495"
+ type:"NCLLoss"
+ bottom: "score495"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss495"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss496"
+ type:"NCLLoss"
+ bottom: "score496"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss496"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss497"
+ type:"NCLLoss"
+ bottom: "score497"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss497"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss498"
+ type:"NCLLoss"
+ bottom: "score498"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss498"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss499"
+ type:"NCLLoss"
+ bottom: "score499"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss499"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss500"
+ type:"NCLLoss"
+ bottom: "score500"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss500"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss501"
+ type:"NCLLoss"
+ bottom: "score501"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss501"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss502"
+ type:"NCLLoss"
+ bottom: "score502"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss502"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss503"
+ type:"NCLLoss"
+ bottom: "score503"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss503"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss504"
+ type:"NCLLoss"
+ bottom: "score504"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss504"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss505"
+ type:"NCLLoss"
+ bottom: "score505"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss505"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss506"
+ type:"NCLLoss"
+ bottom: "score506"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss506"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss507"
+ type:"NCLLoss"
+ bottom: "score507"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss507"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss508"
+ type:"NCLLoss"
+ bottom: "score508"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss508"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss509"
+ type:"NCLLoss"
+ bottom: "score509"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss509"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss510"
+ type:"NCLLoss"
+ bottom: "score510"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss510"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss511"
+ type:"NCLLoss"
+ bottom: "score511"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss511"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+
+layer {
+ name:"loss512"
+ type:"NCLLoss"
+ bottom: "score512"
+ bottom: "label"
+ bottom: "sumscore"
+ top: "loss512"
+ ncl_loss_param {
+  lambda: 1.01
+  net_num: 512
+ }
+ include {
+  phase: TRAIN
+ }
+}
+

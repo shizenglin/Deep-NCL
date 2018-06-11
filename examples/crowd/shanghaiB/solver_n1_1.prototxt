@@ -1,0 +1,33 @@
+
+net: "examples/crowd/code/shanghaiB/network_vgg_v1.prototxt"
+
+test_iter: 315
+
+test_interval: 594
+
+#iter_size: 10
+
+base_lr:1e-9
+
+momentum: 0.9
+
+weight_decay: 0.0005
+
+lr_policy: "step"
+
+gamma: 0.1
+
+stepsize: 2851200
+
+display: 594
+
+max_iter: 2851200
+
+snapshot: 594
+
+snapshot_prefix: "examples/crowd/code/shanghaiB/model/network3/network_vgg_v1_5"
+
+solver_mode: GPU
+
+device_id: 0
+
