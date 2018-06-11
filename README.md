@@ -1,5 +1,5 @@
 # Crowd-Counting-with-Deep-Negative-Correlation-Learning
-The codes for CVPR-2018  paper "Crowd Counting with Deep Negative Correlation Learning" [pdf]
+The codes for CVPR-2018  paper "Crowd Counting with Deep Negative Correlation Learning" in http://openaccess.thecvf.com/content_cvpr_2018/papers/Shi_Crowd_Counting_With_CVPR_2018_paper.pdf
 
 To run this codes, what you need to do is as follows:
 
