@@ -14,7 +14,7 @@ In ¨examples/crowd¨, you can find the network prototxt and solver prototxt, an
 
 4. Testing.
 If you use MAE and MSE as your evaluation metrics, you can monitor the testing results in training. You just need to add 
-layer {
+¨layer {
    name: "mae"
    type: "MAELoss"
    bottom: "avgscore"
@@ -23,8 +23,8 @@ layer {
    include {
     phase: TEST
   }
-},
-layer {
+}¨ and 
+¨layer {
    name: "mse"
    type: "MSELoss"
    bottom: "avgscore"
@@ -33,7 +33,7 @@ layer {
    include {
     phase: TEST
   }
-}
+}¨
 to your network prototxt.
 
 5. Please carefully tune learning rate, we found it had a great influence to the training results in our tasks.
