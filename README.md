@@ -10,7 +10,7 @@ You should have installed Caffe correctly. Then you can clone or download our co
 The codes for preparing crowd counting dataset can be found in ¨examples/crowd/shanghaiA/predata¨. If you would like to run your own tasks, you have to write the codes by yourself.
 
 3. Training.
-In ¨examples/crowd¨, you can find the network prototxt and solver prototxt, and you should make some changes according to your tasks. If you want to use different ¨K¨ (K stands for the number of baseregresors in the ensemble, we found K=64 gives the best performancein our tasks.), the ¨examples/crowd/shanghaiA/create_prototxt.py¨ can help to generate your network prototxt easily.
+In ¨examples/crowd¨, you can find the network prototxt and solver prototxt, and you should make some changes according to your tasks. If you want to use different ¨K¨ (K stands for the number of base regresors in the ensemble, we found K=64 gives the best performance in our tasks.), the ¨examples/crowd/shanghaiA/create_prototxt.py¨ can help to generate your network prototxt easily.
 
 4. Testing.
 If you use MAE and MSE as your evaluation metrics, you can monitor the testing results in training. You just need to add 
