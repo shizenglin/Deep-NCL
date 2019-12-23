@@ -47,7 +47,7 @@ If you use this codes, please kindly cite our paper:
      year={2019}
      }     
      
-     @inproceedings{zhang2019tpamicounting,
+     @articles{zhang2019tpamicounting,
      title={Nonlinear Regression via Deep Negative Correlation Learning},
      author={Le Zhang, Zenglin Shi, Ming-Ming Cheng, Yun Liu, Jia-Wang Bian, Joey Tianyi Zhou, Guoyan Zheng, Zeng Zeng},
      booktitle={TPAMI},
